@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copa RTIC 2026 — Match Book</title>
+<meta name="description" content="Match Book digital — Copa RTIC 2026, IPSC Panamá.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <span class="brand">COPA RTIC 2026</span>
+    <div class="links">
+      <a href="#patrocinadores">Patrocinadores</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#participantes">Participantes</a>
+      <a href="#cifras">Estadísticas</a>
+      <a href="#programacion">Programación</a>
+      <a href="#stages">Stages</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="logos">
+      <img id="logo-main" alt="Logo Copa RTIC">
+      <img id="logo-secondary" alt="Logo IPSC Panamá">
+    </div>
+    <div class="badges">
+      <span class="badge" id="hero-badge-level">IPSC Panamá</span>
+      <span class="badge tape" id="hero-badge-discipline">Handgun</span>
+    </div>
+    <h1 id="hero-title">Nombre del torneo</h1>
+    <p class="sub" id="hero-place">Lugar del campo de tiro</p>
+    <div class="meta-row">
+      <div id="hero-dates">Fechas<br><strong>—</strong></div>
+      <div id="hero-organizers">Organiza<br><strong>—</strong></div>
+      <div>Sanción<br><strong id="hero-sanction">—</strong></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- PATROCINADORES -->
+  <section id="patrocinadores">
+    <div class="wrap">
+      <div class="eyebrow">Gracias</div>
+      <h2>Brought to you by</h2>
+      <p class="section-intro">Marcas y aliados que hacen posible el torneo.</p>
+      <div class="sponsors-frame"><img id="sponsors-img" alt="Marcas patrocinadoras"></div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion">
+    <div class="wrap">
+      <div class="eyebrow">Cómo llegar</div>
+      <h2>Ubicación</h2>
+      <p class="section-intro">Escaneá el QR para abrir la ubicación directamente en tu mapa.</p>
+      <div class="location-grid">
+        <img id="location-map-img" alt="Mapa del campo de tiro">
+        <div class="qr-card">
+          <img id="location-qr-img" alt="Código QR de ubicación">
+          <div class="contact-row">
+            <span id="location-name">—</span>
+            <span id="location-phone">—</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTICIPANTES -->
+  <section id="participantes">
+    <div class="wrap">
+      <div class="eyebrow">Shooters breakdown</div>
+      <h2>Participantes por país</h2>
+      <p class="section-intro"><strong id="breakdown-total" style="color:var(--brass);">—</strong> competidores inscritos.</p>
+      <div class="sponsors-frame" style="margin-bottom:28px;"><img id="breakdown-img" alt="Mapa de participantes por país"></div>
+      <div class="stat-grid" id="breakdown-list"></div>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <section id="cifras">
+    <div class="wrap">
+      <div class="eyebrow">El match</div>
+      <h2>Estadísticas</h2>
+      <p class="section-intro">Divisiones, categorías y clasificaciones inscritas.</p>
+      <div class="stat-grid" id="quick-stats"></div>
+      <div class="info-tables" id="stat-tables"></div>
+    </div>
+  </section>
+
+  <!-- PROGRAMACIÓN -->
+  <section id="programacion">
+    <div class="wrap">
+      <div class="eyebrow">Schedule</div>
+      <h2>Programación</h2>
+      <p class="section-intro">Elegí el día para ver su horario.</p>
+      <div class="day-tabs" id="day-tabs" style="margin-bottom:24px;"></div>
+      <div class="activity-list" id="activity-list"></div>
+    </div>
+  </section>
+
+  <!-- STAGES -->
+  <section id="stages">
+    <div class="wrap">
+      <div class="eyebrow">Escenarios</div>
+      <h2>Stages</h2>
+      <p class="section-intro">Cada tarjeta resume blancos, mínimo de disparos, condición de inicio y procedimiento.</p>
+      <div class="stage-grid" id="stage-grid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Match Book digital · editable en <code>assets/js/data.js</code></span>
+    <span>&copy; <span id="year"></span></span>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
